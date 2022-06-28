@@ -12,7 +12,7 @@ ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 
 # Install Rust and Cargo in /opt
 # Specify the Rust toolchain version
-ARG rust_version=1.60.0
+ARG rust_version=1.58.1
 ENV RUSTUP_HOME=/opt/rustup \
     CARGO_HOME=/opt/cargo \
     PATH=/opt/cargo/bin:$PATH
