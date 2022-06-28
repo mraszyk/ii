@@ -3,8 +3,7 @@
     "internet_identity": {
       "type": "rust",
       "package": "internet_identity",
-      "candid": "src/internet_identity/internet_identity.did",
-      "wasm": "internet_identity.wasm"
+      "candid": "src/internet_identity/internet_identity.did"
     }
   },
   "defaults": {
