@@ -1,0 +1,34 @@
+{
+  "canisters": {
+    "internet_identity": {
+      "type": "custom",
+      "candid": "src/internet_identity/internet_identity.did",
+      "wasm": "internet_identity.wasm",
+      "build": "scripts/build"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "0.0.0.0:8000",
+      "type": "ephemeral"
+    },
+    "identity": {
+      "providers": [
+        "http://[2a00:fb01:400:42:5000:f7ff:fe46:2a71]:8080"
+      ],
+      "type": "persistent"
+    },
+    "nnsdapp": {
+      "providers": [
+        "http://[2a00:fb01:400:42:5000:d1ff:fefe:987e]:8080"
+      ],
+      "type": "persistent"
+    }
+  },
+  "version": 1
+}
